@@ -40,7 +40,9 @@
     "sinon": "~1.9.0",
     "chai": "~1.9.0",
     "sinon-chai": "~2.5.0",
-    "pre-commit": "~0.0.9"
+    "pre-commit": "~0.0.9",
+    "rdf-ext": "~0.1.9",
+    "rdf-interfaces": "~0.1.0"
   },
   "pre-commit": [
     "hint",
