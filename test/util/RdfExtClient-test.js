@@ -1,4 +1,4 @@
-var RdfExtClient = require('../../lib/triple-pattern-fragments/RdfExtClient');
+var RdfExtClient = require('../../lib/util/RdfExtClient');
 
 var Iterator = require('../../lib/iterators/Iterator'),
     rdf = require('../../lib/util/RdfUtil'),
