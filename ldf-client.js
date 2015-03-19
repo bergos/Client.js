@@ -4,11 +4,13 @@ var SparqlResultWriter = require('./lib/writers/SparqlResultWriter');
 SparqlResultWriter.register('application/json', './JSONResultWriter');
 SparqlResultWriter.register('application/sparql-results+json', './SparqlJSONResultWriter');
 SparqlResultWriter.register('application/sparql-results+xml', './SparqlXMLResultWriter');
+SparqlResultWriter.register('application/rdf-interfaces', './RdfInterfacesWriter');
 
 module.exports = {
   SparqlIterator: require('./lib/triple-pattern-fragments/SparqlIterator.js'),
   FragmentsClient: require('./lib/triple-pattern-fragments/FragmentsClient'),
-  RdfExtClient: require('./lib/triple-pattern-fragments/RdfExtClient'),
   Logger: require('./lib/util/Logger'),
   SparqlResultWriter: SparqlResultWriter,
+  RdfExtClient: require('./lib/util/RdfExtClient'),
+  QueryEngine: require('./lib/util/RdfExtQueryEngine')
 };
